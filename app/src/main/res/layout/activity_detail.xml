@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hzn.easytransition.MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingLeft="16sp"
+        android:text="TITLE"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        />
+
+    <View
+        android:id="@+id/v_top_card"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/colorPrimary"
+        />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/avatar_male"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="#5b5b5b"
+        android:textSize="50sp"
+        />
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_name"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            android:paddingBottom="40dp"
+            android:paddingTop="20dp"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_phone"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="151-2121-2121"
+                android:textColor="#446880"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@mipmap/icon_email"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="243666666@gmail.com"
+                android:textColor="#446880"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@mipmap/icon_location"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="China, Guangdong, Shenzhen"
+                android:textColor="#446880"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="16dp"
+        android:src="@mipmap/icon_add"
+        android:visibility="gone"
+        />
+</RelativeLayout>
