@@ -90,6 +90,14 @@ public class EasyTransition {
         enter(activity, DEFAULT_TRANSITION_ANIM_DURATION, null, listener);
     }
 
+    /**
+     * The same as {@link EasyTransition#enter(Activity, long, TimeInterpolator, Animator.AnimatorListener)}
+     * with default duration, no interpolator and no listener
+     */
+    public static void enter(Activity activity) {
+        enter(activity, DEFAULT_TRANSITION_ANIM_DURATION, null, null);
+    }
+
     private static void runEnterAnimation(Activity activity,
                                           ArrayList<EasyTransitionOptions.ViewAttrs> attrs,
                                           final long duration,
