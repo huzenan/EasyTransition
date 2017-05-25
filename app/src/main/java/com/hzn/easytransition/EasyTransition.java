@@ -142,11 +142,13 @@ public class EasyTransition {
     }
 
     /**
-     * Exit the Activity, invoke this method to start exit transition animation
+     * Exit the Activity, invoke this method to start exit transition animation,
+     * the shared views must have same ids, or it will throws NullPointerException
      *
      * @param activity     The Activity Exiting
      * @param interpolator The TimeInterpolator of exit transition animation
      * @param duration     The duration of exit transition animation
+     * @throws NullPointerException throws if shared views not found in The Activity Exiting
      */
     public static void exit(Activity activity, long duration, TimeInterpolator interpolator) {
         Intent intent = activity.getIntent();
