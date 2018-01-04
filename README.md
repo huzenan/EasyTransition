@@ -5,7 +5,25 @@ A light transition lib(with only 2 files...) for Android, scince shared elements
 ![easytransition](https://github.com/huzenan/EasyTransition/blob/master/screenshots/easy%20transition.gif) 
 
 ## Usage
-### 1.Using same ids between two Views in two layouts.
+### 1.Add the library.
+Add to your root build.gradle:
+```xml
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Add the dependency:
+```xml
+dependencies {
+    compile 'com.github.huzenan:EasyTransition:v1.0.0'
+}
+```
+
+### 2.Using same ids between two Views in two layouts.
 
 ```xml
     <!-- Activity A -->
@@ -25,7 +43,7 @@ A light transition lib(with only 2 files...) for Android, scince shared elements
         />
 ```
 
-### 2.In Activity A, make transition options, and start Activity B with EasyTransition#startActivity.
+### 3.In Activity A, make transition options, and start Activity B with EasyTransition#startActivity.
 
 ```java
     // ready for transition options
@@ -40,7 +58,7 @@ A light transition lib(with only 2 files...) for Android, scince shared elements
     EasyTransition.startActivity(intent, options);
 ```
 
-### 3.In Activity B, enter transition when creating, and exit transition when backing.
+### 4.In Activity B, enter transition when creating, and exit transition when backing.
 
 ```java
     // onCreate
