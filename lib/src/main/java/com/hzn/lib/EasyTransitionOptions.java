@@ -1,4 +1,4 @@
-package com.hzn.easytransition;
+package com.hzn.lib;
 
 import android.app.Activity;
 import android.os.Parcel;

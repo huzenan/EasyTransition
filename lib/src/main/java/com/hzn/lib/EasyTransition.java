@@ -1,4 +1,4 @@
-package com.hzn.easytransition;
+package com.hzn.lib;
 
 import android.animation.Animator;
 import android.animation.TimeInterpolator;

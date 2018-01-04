@@ -13,6 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.hzn.lib.EasyTransition;
+
 public class DetailActivity extends AppCompatActivity {
 
     private LinearLayout layoutAbout;

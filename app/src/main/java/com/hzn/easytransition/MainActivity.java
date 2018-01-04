@@ -11,6 +11,9 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.hzn.lib.EasyTransition;
+import com.hzn.lib.EasyTransitionOptions;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {

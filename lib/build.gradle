@@ -1,11 +1,10 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 26
     buildToolsVersion '26.0.2'
 
     defaultConfig {
-        applicationId "com.hzn.easytransition"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
@@ -21,7 +20,4 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:26.+'
-    compile project(':lib')
 }
